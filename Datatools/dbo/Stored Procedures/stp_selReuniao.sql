@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [dbo].[stp_selReuniao]
+
+AS
+	SELECT * FROM REUNIAO
+

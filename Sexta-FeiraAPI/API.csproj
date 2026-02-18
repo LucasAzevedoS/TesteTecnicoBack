@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CadastroController.cs" />
+    <Compile Remove="Services\InputModels\EstabelecimentoInputModel.cs" />
+    <Compile Remove="Services\InputModels\InativarGrupoInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluClienteInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiAgendaInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiAgendamentoInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiEstabelecimentoInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiGrupoInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiReuniaoInputModel.cs" />
+    <Compile Remove="Services\InputModels\IncluiServicoInputModel.cs" />
+    <Compile Remove="Services\InputModels\SelClienteInputModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Dapper" Version="2.1.44" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+</Project>

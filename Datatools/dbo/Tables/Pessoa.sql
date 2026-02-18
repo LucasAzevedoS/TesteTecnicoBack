@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].Pessoa (
+    id        INT      IDENTITY (1, 1) NOT NULL,
+    dtCriacao  DATETIME DEFAULT (getdate()) NULL,
+    Nome nvarchar(255),
+    Email nvarchar(255),
+    celular nvarchar(255),
+    dtNascimento Date,
+    Grupo int,
+    EstadoCivil int,
+    CPF nvarchar(20),
+    telefone nvarchar(20),
+    cadUnico  nvarchar(20),
+    tituloEleitor  nvarchar(255),
+    reservista nvarchar(255),
+    cohab  nvarchar(255),
+    Conjuge  nvarchar(255),
+    filhos int,
+    filhosMenores int,
+    cep  nvarchar(10),
+    endereco  nvarchar(255),
+    numeroEndereco  nvarchar(10),
+    complemento  nvarchar(255),
+    bairro  nvarchar(100),
+    cidade  nvarchar(100),
+    uf char(2)
+);
+
